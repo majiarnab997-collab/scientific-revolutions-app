@@ -1,0 +1,2 @@
+const FackAccount=[{ email:"Arnab@1234.com", password:"Requestarnab1234" },{ email:"John@1234.com", password:"Requestgen@1234" },{ email:"Javan@1234.com", password:"Requestjavan@1234" }]
+export default FackAccount

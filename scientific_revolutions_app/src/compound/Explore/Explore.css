@@ -1,0 +1,88 @@
+.explore-main-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Heading */
+
+.explore-heading {
+  font-size: 36px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 15px;
+}
+
+/* Role Badge */
+
+.role-container {
+  margin-bottom: 25px;
+}
+
+.role-badge {
+  display: inline-block;
+  padding: 8px 18px;
+  margin: 5px;
+  background: #f1f5f9;
+  border-radius: 50px;
+  font-size: 14px;
+  color: #334155;
+  border: 1px solid #e2e8f0;
+}
+
+/* Search Card */
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  max-width: 900px;
+  margin: auto;
+  padding: 18px;
+
+  background: #f8fafc;
+  border-radius: 18px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+/* Input */
+
+.search-input-box {
+  position: relative;
+  flex: 1;
+}
+
+.search-input {
+  width: 85%;
+  padding: 14px 16px 14px 45px;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  background: white;
+  outline: none;
+}
+
+/* Icon */
+
+.search-icon {
+  position: absolute;
+  left: 39px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+}
+
+/* Fix Button */
+
+.search-button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  min-width: 110px;
+}
+
+.search-button:hover {
+  background: #1d4ed8;
+}
