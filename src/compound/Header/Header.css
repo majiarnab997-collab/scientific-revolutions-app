@@ -1,0 +1,88 @@
+/* Main Header */
+.header-container {
+  width: 100%;
+  background: #a5cd21;
+  border-radius: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* Inner Container */
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 40px;
+}
+
+/* Logo */
+.image-size {
+  width: 140px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border-radius: 100px;
+}
+
+.image-size:hover {
+  transform: scale(1.05);
+}
+
+/* Navigation Buttons Container */
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* Buttons */
+.Header-button {
+  padding: 8px 18px;
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.Header-button:hover {
+  background: #2563eb;
+  color: white;
+}
+
+/* Logout Button Special Color */
+.logout-btn:hover {
+  background: #ef4444;
+}
+
+/* Active Click Effect */
+.Header-button:active {
+  transform: scale(0.95);
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .header-inner {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .Header-button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .image-size {
+    width: 120px;
+  }
+}
