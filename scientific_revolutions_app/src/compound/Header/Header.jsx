@@ -3,31 +3,30 @@ import './Header.css'
 
 const Header = () => {
   return (
-    <div>
-      <div style={{
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        padding: '10px 20px'
-      }}>
+    <div className="header-container">
+      <div className="header-inner">
+        
         <img
           src="https://res.cloudinary.com/dtfzhuxyr/image/upload/v1775457990/Screenshot_2026-04-06_121610_nb4zca.png"
           alt="Logo"
           className="image-size"
         />
 
-        <div>
+        <div className="nav-buttons">
           <Link to="/">
-            <button className='Header-button'>Home</button>
+            <button className="Header-button">Home</button>
           </Link>
+
           <Link to="/cards">
-            <button className='Header-button'>All Card</button>
+            <button className="Header-button">All Card</button>
           </Link>
+
           <Link to="/explore">
-            <button className='Header-button'>Explore</button>
+            <button className="Header-button">Explore</button>
           </Link>
-         <Link to="/login">
-            <button className='Header-button'>Log Out</button>
+
+          <Link to="/login">
+            <button className="Header-button logout-btn">Log Out</button>
           </Link>
         </div>
 

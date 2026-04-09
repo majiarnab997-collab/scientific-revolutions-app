@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react"
 import ScientificCard from "../ScientificCard/ScientificCard"
 import "./card.css"
+import { useNavigate } from "react-router-dom"
 
 const Card = () => {
   const [cardData, setCardData] = useState([])
   const [search, setSearch] = useState("")
+  const navigate = useNavigate()
 
   useEffect(() => {
     const fetchData = async () => {
@@ -33,7 +35,7 @@ const Card = () => {
   const filteredCards = cardData.filter((item) =>
     item.title.toLowerCase().includes(search.toLowerCase())
   )
-
+  
   return (
     <>
       <h1 className="card-heading">Card</h1>
@@ -47,8 +49,9 @@ const Card = () => {
           onChange={(e) => setSearch(e.target.value)}
         />
       </div>
-
+     {filteredCards.length === 0 ? <div className="no-result-container"><p className="no-result-text">No cards found.</p> <button onClick={() => navigate("/explore") } className="explore-btn">Go to Explore</button></div> : 
       <div className="card-arrangement">
+        
         {filteredCards.map((item) => (
           <ScientificCard
             key={item.id}
@@ -60,7 +63,7 @@ const Card = () => {
             image={item.imageUrl}
           />
         ))}
-      </div>
+      </div>}
     </>
   )
 }
