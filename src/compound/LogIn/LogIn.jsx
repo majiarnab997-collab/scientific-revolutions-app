@@ -16,10 +16,10 @@ const LogIn = () => {
     console.log(account)
     if(account){
       const Token = uuidv4();
-      Cookies.set("loggedIn", Token, { expires: 7 });
-      Cookies.set("userEmail", email, { expires: 7 });
+      Cookies.set("loggedIn", Token, { expires: 1 });
+      Cookies.set("userEmail", email, { expires: 1 });
        
-      alert("Login successful!");
+      
       navigate("/",{replace:true} );
     }else{
       alert("Invalid email or password. Please try again.");
