@@ -16,10 +16,10 @@ const LogIn = () => {
     console.log(account)
     if(account){
       const Token = uuidv4();
-      Cookies.set("loggedIn", Token, { expires: 7 });
-      Cookies.set("userEmail", email, { expires: 7 });
+      Cookies.set("loggedIn", Token, { expires: 1 });
+      Cookies.set("userEmail", email, { expires: 1 });
        
-      alert("Login successful!");
+      
       navigate("/",{replace:true} );
     }else{
       alert("Invalid email or password. Please try again.");
@@ -28,7 +28,7 @@ const LogIn = () => {
     <div className="login-page">
       <div className="login-card">
 
-        {/* Logo */}
+        
         <div className="login-logo">
           <div className="login-logo-icon">🔬</div>
           <span className="login-logo-text">Scientific Revolutions</span>
@@ -38,13 +38,13 @@ const LogIn = () => {
         <h2 className="login-title">Sign in to your account</h2>
         <p className="login-subtitle">Explore the discoveries that changed the world.</p>
 
-        {/* Email */}
+        
         <div className="login-field">
           <label>Email address</label>
           <input type="email" placeholder="you@example.com" onChange={(e) => setEmail(e.target.value)} />
         </div>
 
-        {/* Password */}
+        
         <div className="login-field">
           <label>Password</label>
           <input type="password" placeholder="••••••••" onChange={(e)=>setPassword(e.target.value)}/>

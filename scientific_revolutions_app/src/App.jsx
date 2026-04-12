@@ -7,6 +7,7 @@ import ProtectedRoute from './compound/ProtectedRoute/ProtectedRoute'
 import ReadMoreDetails from './compound/ReadMoreDetails/ReadMoreDetails'
 import LogIn from './compound/LogIn/LogIn'
 import ErrorMessage from './compound/ErrorMessage/ErrorMessage'
+import AddNewCard from './compound/AddNewCard/AddNewCard'
 
 import './App.css'
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="/cards" element={<ProtectedRoute><Header /> <Card /></ProtectedRoute>} />
         <Route path="/explore" element={<ProtectedRoute><Header /> <Explore /></ProtectedRoute>} />
         <Route path="/details/:id" element={<ProtectedRoute> <ReadMoreDetails /></ProtectedRoute>} />
+        <Route path="/addnewcard" element={<ProtectedRoute><Header /> <AddNewCard /></ProtectedRoute>} />
         <Route path="*" element={ <ErrorMessage /> } />
       </Routes>
     </>

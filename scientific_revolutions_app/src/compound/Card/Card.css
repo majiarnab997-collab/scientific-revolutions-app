@@ -86,7 +86,7 @@
 
 /* Hover Effect */
 .explore-btn:hover {
-  background: #1d4ed8;
+  background: #11dad3;
   transform: translateY(-2px);
 }
 
@@ -94,3 +94,22 @@
 .explore-btn:active {
   transform: scale(0.96);
 }
+
+.explore-btn-add{
+  padding: 10px 20px;
+  background: #de8b0f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.explore-btn-add:hover {
+  background: #7210db;
+  transform: translateY(-2px);
+}
+.explore-btn-add:active {
+  transform: scale(0.96);
+} 

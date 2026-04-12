@@ -35,6 +35,9 @@ const Card = () => {
   const filteredCards = cardData.filter((item) =>
     item.title.toLowerCase().includes(search.toLowerCase())
   )
+  const AddButton = () => {
+    <navigate to="/addnewcard" /> 
+  }
   
   return (
     <>
@@ -49,7 +52,7 @@ const Card = () => {
           onChange={(e) => setSearch(e.target.value)}
         />
       </div>
-     {filteredCards.length === 0 ? <div className="no-result-container"><p className="no-result-text">No cards found.</p> <button onClick={() => navigate("/explore") } className="explore-btn">Go to Explore</button></div> : 
+     {filteredCards.length === 0 ? <div className="no-result-container"><p className="no-result-text">No cards found.</p> <button onClick={() => navigate("/explore") } className="explore-btn">Go to Explore</button><button className="explore-btn-add" onClick={AddButton}>add new card</button></div> : 
       <div className="card-arrangement">
         
         {filteredCards.map((item) => (

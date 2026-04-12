@@ -4,7 +4,7 @@ const ProtectedRoute = ({ children }) => {
     const loggedIn = Cookies.get("loggedIn");
 
     if (!loggedIn) {
-        return <Navigate to="/login" />;
+        return <Navigate to="/login" replace />;
     }
     
 
