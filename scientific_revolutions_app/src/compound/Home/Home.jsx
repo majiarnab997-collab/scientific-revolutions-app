@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className="home-container">
 
-      {/* Hero Section */}
+      
       <section className="hero-section">
         <h1 className="hero-title">
           Unveiling the <span className="hero-highlight">Scientific Revolutions</span>
@@ -24,7 +24,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* ✅ This is what goes in place of the comment */}
+      
       <section className="features-section">
 
         <div className="feature-card">

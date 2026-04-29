@@ -36,7 +36,7 @@ const Explore = () => {
         Explore the Unknown
       </h1>
 
-      {/* Role Style Line */}
+     
       <div className="role-container">
         <span className="role-badge">Physics</span>
         <span className="role-badge">Chemistry</span>
