@@ -27,8 +27,9 @@ This project demonstrates full CRUD operations using a React frontend and a Flas
 
 ---
 
-## 🧠 Project Overview
+## 📁 Project Structure
 
+```
 SCIENTIFIC_REVOLUTIONS
 │
 ├── scientific_revolutions_app
@@ -47,7 +48,7 @@ SCIENTIFIC_REVOLUTIONS
 │   │   │   │   ├── EditCard
 │   │   │   │   ├── ErrorMessage
 │   │   │   │   ├── Explore
-│   │   │   │   ├── FackAccount
+│   │   │   │   ├── FakeAccount
 │   │   │   │   ├── FetchMoreDetails
 │   │   │   │   ├── Header
 │   │   │   │   ├── Home
@@ -71,23 +72,24 @@ SCIENTIFIC_REVOLUTIONS
 │
 ├── .gitignore
 ├── README.md
+```
 
 ---
 
 ## 🚀 Features
 
-* 🔐 Login & Logout system (Authentication ready structure)
+* 🔐 Login & Logout system (Authentication-ready structure)
 * 🛡️ Protected Routes for secure access
-* 🏠 Home page with introduction about the application
+* 🏠 Home page with application introduction
 * 📋 View all scientific cards
 * ➕ Add new cards
 * ✏️ Edit existing cards
 * 🗑️ Delete cards
-* 🔍 Search functionality for cards
+* 🔍 Search functionality
 * ❌ "No Results Found" handling with navigation options
 * 🌐 Explore page (Wikipedia-style experience)
-* 🔗 External trusted links for more information
-* ⚡ Real-time updates without page reload
+* 🔗 External trusted links
+* ⚡ Real-time updates (no page reload)
 * 🖼️ Image support for each card
 
 ---
@@ -97,13 +99,13 @@ SCIENTIFIC_REVOLUTIONS
 This application works like a **mini Wikipedia-style platform** focused on scientific revolutions.
 
 * Users can browse and explore scientific topics
-* If data is not found, users are guided to:
+* If no data is found, users are guided to:
 
   * Go to Explore page
   * Add a new card
-* The Explore section provides external trusted resources (like Wikipedia)
-* Backend APIs manage all data using MySQL database
-* Frontend dynamically renders cards using React components
+* The Explore section provides trusted external resources (like Wikipedia)
+* Backend APIs manage data using MySQL
+* Frontend dynamically renders UI using React
 
 ---
 
@@ -119,34 +121,34 @@ This application works like a **mini Wikipedia-style platform** focused on scien
 ### Frontend:
 
 * Built with React (Vite)
-* Uses components like:
+* Uses reusable components:
 
   * CardList
   * AddNewCard
   * EditCard
   * Explore
-* Uses Fetch API to communicate with backend
-* Updates UI without page reload
+* Communicates with backend using Fetch API
+* Updates UI dynamically without reload
 
 ---
 
 ## 📚 What I Learned
 
-* 🔗 API integration between frontend & backend
-* 🗄️ Database management using MySQL
+* 🔗 API integration (frontend ↔ backend)
+* 🗄️ MySQL database handling
 * ⚛️ React state management (useState, useEffect)
 * ⚡ Async programming (fetch, async/await)
-* 🛠️ Full CRUD operations
-* 🔐 Basic authentication & route protection
+* 🛠️ CRUD operations
+* 🔐 Route protection & basic authentication
 
 ---
 
 ## 🚀 Future Improvements
 
-* 🔐 Full authentication system (JWT / Sessions)
+* 🔐 Full authentication (JWT / Sessions)
 * 🔍 Advanced search & filtering
-* 🌐 Full deployment (Frontend + Backend + Database)
-* 📱 Mobile responsive UI
+* 🌐 Full deployment (frontend + backend + database)
+* 📱 Responsive UI (mobile-friendly)
 * ⭐ Favorites / Bookmark feature
 
 ---
@@ -196,8 +198,6 @@ http://localhost:5173
 
 ## 🗄️ Database Setup
 
-Run this in MySQL:
-
 ```sql
 CREATE DATABASE mydb;
 
@@ -229,7 +229,7 @@ CREATE TABLE cards (
 ## 🤝 Contributing
 
 Contributions are welcome!
-Feel free to fork the repository and submit a pull request.
+Feel free to fork the repo and submit a pull request.
 
 ---
 
