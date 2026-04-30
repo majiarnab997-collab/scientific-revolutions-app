@@ -175,7 +175,7 @@ python app.py
 Backend runs on:
 
 ```
-http://127.0.0.1:5000
+https://your-api-link
 ```
 
 ---
@@ -191,7 +191,7 @@ npm run dev
 Frontend runs on:
 
 ```
-http://localhost:5173
+https://your-link
 ```
 
 ---
