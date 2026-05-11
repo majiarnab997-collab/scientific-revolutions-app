@@ -10,7 +10,6 @@ This project demonstrates full CRUD operations using a React frontend and a Flas
 ### Frontend:
 
 * React (Vite)
-* JavaScript
 * HTML5
 * CSS
 
