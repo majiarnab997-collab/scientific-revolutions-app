@@ -14,7 +14,7 @@ db = mysql.connector.connect(
 cursor = db.cursor(dictionary=True)
 
 
-# ── Helper: reconnect if connection dropped ──
+
 def get_cursor():
     global db, cursor
     try:
@@ -30,9 +30,7 @@ def get_cursor():
     return cursor
 
 
-# ─────────────────────────────────────────────
-# CREATE  →  POST /add-card
-# ─────────────────────────────────────────────
+
 @app.route("/add-card", methods=["POST"])
 def add_card():
     try:
@@ -57,9 +55,7 @@ def add_card():
         return jsonify({"error": str(e)}), 500
 
 
-# ─────────────────────────────────────────────
-# READ  →  GET /get-cards
-# ─────────────────────────────────────────────
+
 @app.route("/get-cards", methods=["GET"])
 def get_cards():
     try:
@@ -73,9 +69,7 @@ def get_cards():
         return jsonify({"error": str(e)}), 500
 
 
-# ─────────────────────────────────────────────
-# READ ONE  →  GET /get-card/<id>
-# ─────────────────────────────────────────────
+
 @app.route("/get-card/<int:card_id>", methods=["GET"])
 def get_card(card_id):
     try:
@@ -91,9 +85,7 @@ def get_card(card_id):
         return jsonify({"error": str(e)}), 500
 
 
-# ─────────────────────────────────────────────
-# UPDATE  →  PUT /update-card/<id>
-# ─────────────────────────────────────────────
+
 @app.route("/update-card/<int:card_id>", methods=["PUT"])
 def update_card(card_id):
     try:
@@ -128,9 +120,7 @@ def update_card(card_id):
         return jsonify({"error": str(e)}), 500
 
 
-# ─────────────────────────────────────────────
-# DELETE  →  DELETE /delete-card/<id>
-# ─────────────────────────────────────────────
+
 @app.route("/delete-card/<int:card_id>", methods=["DELETE"])
 def delete_card(card_id):
     try:

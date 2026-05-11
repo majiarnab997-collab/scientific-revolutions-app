@@ -53,8 +53,9 @@ const LogIn = () => {
           </div>
         </div>
 
-        <button className="btn-login" onClick={SignButtonClick}><Link to="/login">Sign in</Link></button>
-
+        <button className="btn-login" onClick={SignButtonClick}>
+  Sign in
+</button>
         <div className="login-divider">
           <div className="divider-line"></div>
           <span>or</span>

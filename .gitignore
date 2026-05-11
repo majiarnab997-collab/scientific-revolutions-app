@@ -9,7 +9,8 @@ lerna-debug.log*
 
 # Dependencies
 node_modules/
-
+.env
+__pycache__
 # Build files
 dist/
 dist-ssr/

@@ -10,6 +10,7 @@ import ErrorMessage from './compound/ErrorMessage/ErrorMessage'
 import AddNewCard from './compound/AddNewCard/AddNewCard'
 import CardList from './compound/CardList/CardList'      // ← NEW
 import EditCard from './compound/EditCard/EditCard'      // ← NEW
+import LogOut from './compound/LogOut/LogOut'
 
 import './App.css'
 
@@ -18,6 +19,9 @@ function App() {
     <>
       <Routes>
         <Route path="/login" element={<LogIn />} />
+        <Route path="/logout" element={<LogOut />} />
+
+         {/* ── PROTECTED ROUTES ── */} 
         <Route path="/" element={<ProtectedRoute><Header /><Home /></ProtectedRoute>} />
         <Route path="/cards" element={<ProtectedRoute><Header /><Card /></ProtectedRoute>} />
         <Route path="/explore" element={<ProtectedRoute><Header /><Explore /></ProtectedRoute>} />
